@@ -1,0 +1,87 @@
+/* Full-screen gradient background */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+}
+.bg-gradient-to-r {
+    background: linear-gradient(135deg, #ff9966, #ff5e62, #fbc2eb, #a18cd1);
+    background-size: 400% 400%;
+    animation: gradient-animation 8s ease infinite;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Gradient animation */
+@keyframes gradient-animation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Card styling */
+.card {
+    min-height: 600px;
+    width: 500px;
+    background: #fff;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#bmiScaleBar {
+    width: 100%;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    text-align: center; /* Centers text inside the scale */
+    padding: 8px; /* Adds some padding for a cleaner look */
+}
+
+#bmiScaleBar .progress {
+    height: 100px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+#bmiScaleBar .progress-bar {
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+#bmiScaleBar .progress-bar.bg-success {
+    background-color: #28a745;
+}
+
+#bmiScaleBar .progress-bar.bg-info {
+    background-color: #17a2b8;
+}
+
+#bmiScaleBar .progress-bar.bg-warning {
+    background-color: #ffc107;
+}
+
+/* Button styles */
+.btn-primary {
+    background-color: linear-gradient(135deg, #4e73df, #224abe);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    font-size: 1.5rem;
+    padding: 0.5rem 1.5rem;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
