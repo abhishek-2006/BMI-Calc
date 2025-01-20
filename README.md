@@ -1,6 +1,6 @@
 # BMI-Calc
 
-##  Overview
+## 🎯 Overview
 
 A simple and interactive BMI (Body Mass Index) Calculator that helps users determine their BMI and provides insights into their weight category.
 
